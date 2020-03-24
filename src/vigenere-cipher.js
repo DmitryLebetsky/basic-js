@@ -74,7 +74,7 @@ class VigenereCipheringMachine {
                     pushLetter = Math.abs(pushLetter) % 26;
                     message.push(alphabet.split('').reverse().join('')[pushLetter - 1]);
                 } else {
-                    pushLetter - pushLetter % 26;
+                    pushLetter = pushLetter % 26;
                     message.push(alphabet[pushLetter]);
                 }
             };
